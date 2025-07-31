@@ -21,7 +21,7 @@
             "on-click": "swaync-client -t -sw"
         },
         "clock": {
-            "format": "{:%I:%M:%S %p} ",
+            "format": " {:%a %d %I:%M:%S %p} ",
             "interval": 1,   
             "tooltip-format": "<tt>{calendar}</tt>",
             "calendar": {
