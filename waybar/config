@@ -35,9 +35,9 @@
             }
         },
         "network": {
-            "format-wifi": " |",
-            "format-ethernet":" |",
-            "format-disconnected": " |",
+            "format-wifi": "   |",
+            "format-ethernet":"  |",
+            "format-disconnected": "  |",
             "tooltip-format-disconnected": "Error",
             "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
             "tooltip-format-ethernet": "{ifname} 🖧 ",
@@ -79,7 +79,7 @@
 		"format": "<span color='#c2c5c6'> {volume}% {icon} |</span>",
 		"format-muted": "<span color='#c2c5c6'> |</span>",
 		"format-icons": {
-			"default": ["", " "]
+			"default": [" ", "  "]
 		},
 		"on-click": "pavucontrol"
 	},
