@@ -53,7 +53,7 @@
             "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
             "tooltip-format-enumerate-connected": "{device_alias}\n{device_address}",
             "tooltip-format-enumerate-connected-battery": "{device_alias}\n{device_address}\n{device_battery_percentage}%",
-            "on-click-right": "blueman-manager",
+            "on-click-right": "blueman-manager"
         }, 
         "battery": {
             "interval":30,
@@ -73,7 +73,7 @@
             "󰂀",
             "󰂂",
             "󰁹"
-            ],
+            ]
         },
 	"pulseaudio": {
 		"format": "<span color='#c2c5c6'> {volume}% {icon} |</span>",
@@ -88,7 +88,7 @@
             "interval": 30,   
             "on-click": "kitty sh -c 'yay -Syu; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
             "signal": 8,
-            "tooltip": false,
+            "tooltip": false
         },
         "custom/expand": {
             "format": "",
@@ -105,7 +105,7 @@
                 "transition-to-left": true,
                 "click-to-reveal": true
             },
-            "modules": ["custom/expand","cpu","memory","temperature","custom/endpoint"],
+            "modules": ["custom/expand","cpu","memory","temperature","custom/endpoint"]
         },
         "cpu": {
             "format": "󰻠",
@@ -116,11 +116,11 @@
         },
         "temperature": {
             "critical-threshold": 80,
-            "format": "",
+            "format": ""
         },
         "tray": {
             "icon-size": 14,
             "spacing": 10
-        },
+        }
 } 
 
