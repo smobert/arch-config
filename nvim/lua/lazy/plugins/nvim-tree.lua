@@ -20,8 +20,8 @@ return {
         icons = {
           glyphs = {
             folder = {
-              arrow_closed = "x",
-              arrow_open = "y",
+              arrow_closed = "|",
+              arrow_open = "~",
             },
           },
         },
