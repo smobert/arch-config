@@ -1,3 +1,4 @@
 local.config
+hypr/hyprland/localconfig.lua
 
 nvim/lazy-lock.json
