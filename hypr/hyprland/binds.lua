@@ -42,7 +42,7 @@ print("C")
 
 hl.bind(mainMod .. " + ESCAPE", hl.dsp.exec_cmd("hyprlock"))
 
-if machine == "surface" then
+if machine ~= "surface" then
   hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("kitty ~/.config/hypr/hyprland/power.sh"))
 else
   hl.bind("XF86PowerOff", hl.dsp.exec_cmd("kitty ~/.config/hypr/hyprland/power.sh"))
