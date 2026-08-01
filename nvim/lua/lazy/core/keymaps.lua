@@ -18,3 +18,24 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
+
+-- lsp management
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(event)
+    local opts = { buffer = event.buf }
+
+    keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+    keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
+    keymap.set("n", "gr", vim.lsp.buf.references, opts)
+    keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
+
+    keymap.set("n", "K", vim.lsp.buf.hover, opts)
+
+    keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+    keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
+
+    keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
+    keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
+    end,
+})
+
