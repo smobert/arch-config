@@ -45,9 +45,9 @@ print("C")
 hl.bind(mainMod .. " + ESCAPE", hl.dsp.exec_cmd("hyprlock"))
 
 if machine ~= "surface" then
-  hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("kitty ~/.config/hypr/hyprland/power.sh"))
+  hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("kitty ~/.config/hypr/hyprland/scripts/power.sh"))
 else
-  hl.bind("XF86PowerOff", hl.dsp.exec_cmd("kitty ~/.config/hypr/hyprland/power.sh"))
+  hl.bind("XF86PowerOff", hl.dsp.exec_cmd("kitty ~/.config/hypr/hyprland/scripts/power.sh"))
 end
 
 print("D")
@@ -92,7 +92,7 @@ hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"))
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"))
 
 if machine ~= "desktop" then
-  hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%+"))
-  hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-"))
+  hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("~/.config/hypr/hyprland/scripts/bup.sh 1"))
+  hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("~/.config/hypr/hyprland/scripts/bup.sh 2"))
 end
 print("t")
