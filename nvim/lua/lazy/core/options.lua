@@ -29,3 +29,9 @@ opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 -- split window rules
 opt.splitright = true -- vertical splits will put the new window to the right
 opt.splitbelow = true -- horizontal splits will put the new window beneath
+
+vim.filetype.add({
+  filename = {
+    ["README"] = "markdown",
+  },
+})
